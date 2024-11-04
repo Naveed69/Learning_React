@@ -12,11 +12,12 @@ export const Counter=(props)=>{
         setCount(count-1);
     }
     const decrementBy10=()=>{
+        setCount(count-props.number);
         if(count<1){
             setCount(0)
             return
         }
-        setCount(count-props.number);
+        
     }
     return(
         <div>
